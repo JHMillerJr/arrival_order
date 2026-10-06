@@ -28,7 +28,7 @@ def function():
     from modules.units import u; u=u()
     
     #> method (lpot, deflect)
-    method = 'lpot'
+    method = 'deflect'
     
     #> declarations
     numGals       = 100                       # total # of galaxies to generate
@@ -44,7 +44,7 @@ def function():
     cosmo['omega_lam_0'] = 1-cosmo['omega_m_0']# cosmological constant
     
     #> output kwargs
-    folder   = '../../arrival_order/data/simple_lenses/' # dir in dataDir to save data
+    folder   = '../../arrival_order/data/simple_lenses/deflect/' # dir in dataDir to save data
     suffix   = '_nph50'                              # suffix to add to file names
     verbose  = False                           # if wanting extra print info
     timeFlag = False                           # if wanting time info
@@ -95,7 +95,7 @@ def function():
     #> image properties kwargs
     jims   = 5                                 # number of request images from each source (5=quad)
     mags   = True                              # if wanting image magnifications (will change saveFlag automatically)
-    delays = True                              # if wanting time delays (will change saveFlag automatically)
+    delays = False                              # if wanting time delays (will change saveFlag automatically)
     observables = ['t12', 't23', 't34', 'd2/d1', 'd3/d1' ,'d4/d1', 'dt23', 'd01'] # requested lensing observables
     #observables = []
     
@@ -127,7 +127,7 @@ def function():
             array['norm']['init'] = 0.0
             
         #> sources (fixed across nph runs so only the grid resolution changes)
-        src_file = '../arrival_order/data/simple_lenses/26093016124901_nph250/26093016124901_nph250_srcs.npy'
+        src_file = '../arrival_order/data/simple_lenses/deflect/26100114424801_nph250/26100114424801_nph250_srcs.npy'
         source   = np.load(src_file)                # (numGals*numSource_gal, 2) [arcsec]
         #source=None
 
