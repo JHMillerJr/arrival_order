@@ -1,0 +1,2 @@
+zl,zs,pix_arc,nfw_name,nfw_x0,nfw_y0,nfw_logmass,nfw_concentration,nfw_axisrat,nfw_theta,nfw_add,nfw_radius,nfw_rho0,hern_name,hern_x0,hern_y0,hern_logmass,hern_effrad,hern_axisrat,hern_theta,hern_add,hern_radius,hern_norm,mult4_m,mult4_x0,mult4_y0,mult4_norm,mult4_slope,mult4_theta,mult4_add,rhoc,sigCrit,angDist
+0.5,1.0,60,p01,0.0,0.0,13,7,0.85,0.0,True,53.82341460702632,16949256.89358957,p02,0.0,0.0,11.1,5,0.85,0.0,True,2.7550000000000003,958198136.8745033,4,0.0,0.0,0.016666666666666666,2.0,0.0,True,223.18938523953287,3019764594.736814,1272455.5946886265
