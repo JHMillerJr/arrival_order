@@ -410,7 +410,7 @@ if __name__ == '__main__':
     print('> '+os.path.basename(__file__))
 
     #> loading
-    run, data = read(outFolder=outFolder, folders=['mult_m1_norm'])
+    run, data = read(outFolder=outFolder, folders=['nfw_x0'])
 
     #> iterating thru folders (i.e., incParams)
     for folder, b_data in data.items():
